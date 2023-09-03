@@ -1,0 +1,19 @@
+@media screen and (min-width: 1440px) {
+    .layout-container {
+        position: relative;
+        
+        .l-left-col {
+            position: absolute;
+            width: 5vw;
+            left: 15px;
+            top: 32px;
+        }
+
+        .l-right-col {
+            width: 94vw;
+            position: absolute;
+            right: 0;
+            top: 64px;
+        }
+    }
+}

@@ -1,0 +1,96 @@
+@use '../../colors';
+
+header {
+
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        background-color: colors.$semi-dark-blue;
+        height: 56px;
+        width: 100%;
+        padding: 0 16px;
+
+        a {
+            width: 20px;
+            height: 20px;
+            background-size: cover;
+
+            .logo {
+                width: 25px;
+                height: 20px;
+            }
+
+            &:first-child {
+                margin-right: auto;
+            }
+
+        }
+
+        .avatar {
+            width: 24px;
+            height: 24px;
+            border-radius: 32px;
+            border: 1px solid #fff;
+            margin-left: auto;
+        }
+
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    header {
+        padding: 25px 25px 0 25px;
+
+        nav {
+            height: 72px;
+            border-radius: 10px;
+            gap: 25px;
+
+            .logo {
+                width: 32px;
+                height: 25px;
+            }
+
+            .avatar {
+                width: 32px;
+                height: 32px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    header {
+        padding: 0;
+
+        nav {
+            flex-direction: column;
+            height: 960px;
+            width: 96px;
+            padding: 0;
+            width: 100%;
+            justify-content: flex-start;
+            padding: 35px 0;
+            border-radius: 20px;
+
+            a {
+                &:first-child {
+                    margin-right: 0;
+                }
+
+            }
+            
+            .logo {
+                margin-bottom: 74px;
+            }
+            .avatar {
+                margin-left: 0;
+                margin-top: auto;
+            }
+
+        }
+    }
+}

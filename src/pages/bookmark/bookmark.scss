@@ -1,0 +1,44 @@
+.bookmarked-container {
+    color: #fff;
+    color: #fff;
+    padding: 0 1em; //25px
+    margin-bottom: 3.5em; //56px
+
+    h1 {
+        font-size: 1.25rem; //20px
+        font-weight: 300;
+        margin: 1.2em 0; //24px
+    }
+
+    .bookmarked-tv-series-container {
+        .bookmarked-tv-heading {
+            margin-top: 24px;
+        }
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .bookmarked-container{
+        padding: 0 1.56em; //25px
+
+        h1 {
+            font-size: 2rem; //32px
+        }
+
+        .bookmarked-tv-series-container {
+            .bookmarked-tv-heading {
+                margin-top: 48px;
+            }
+        }
+    }
+    
+}
+
+@media screen and (min-width: 1440px) {
+    .bookmarked-container {
+        padding-left: 36px; //36px
+
+    }
+    
+}

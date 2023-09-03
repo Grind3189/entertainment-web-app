@@ -1,0 +1,29 @@
+@use '../../colors';
+
+.bookmark-btn {
+    border-radius: 50%;
+    border: none;
+    background-color: #10141E;
+    opacity: 0.6;
+    width: 32px;
+    height: 32px;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+    .bookmark-btn {
+        &:hover {
+            background-color: #fff;
+            opacity: 1;
+            svg {
+                path {
+                    stroke: colors.$dark-blue;
+                }
+            }
+        }
+    }
+    
+}
+

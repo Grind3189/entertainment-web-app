@@ -1,0 +1,106 @@
+@use '../../colors';
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+    img {
+        width: 32px;
+        height: 25px;
+        margin: 58px 0;
+    }
+
+    .login-form {
+        background-color: colors.$semi-dark-blue;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 90%;
+        border-radius: 10px;
+        padding: 24px;
+        max-width: 400px;
+            h1 {
+                margin: 0;
+                font-weight: 300;
+                font-size: 32px;
+                margin-bottom: 24px;
+            }
+
+            .input-container {
+                width: 100%;
+                margin-bottom: 20px;
+                position: relative;
+
+                input {
+                    background-color: transparent;
+                    border: none;
+                    border-bottom: 1px solid colors.$greyish-blue;
+                    color: inherit;
+                    outline: none;
+                    width: 100%;
+                    padding: 16px;
+                    font-family: inherit;
+                    font-weight: 300;
+                    font-size: 15px;
+                    margin: 0;
+                    &:focus {
+                        border-bottom: 1px solid #fff;
+                    }
+
+                    &.empty {
+                        border-bottom: 1px solid colors.$red;
+                    }
+                  
+                }
+
+                span {
+                    position: absolute;
+                    right: 16px;
+                    top: 18px;
+                    font-size: 13px;
+                    color: colors.$red;
+                }
+            }
+          
+
+            button {
+                background-color: colors.$red;
+                border: none;
+                border-radius: 6px;
+                align-self: center;
+                width: 100%;
+                padding: 14px 0;
+                color: inherit;
+                font-family: inherit;
+                font-weight: 300;
+                margin-bottom: 24px;
+                font-size: 15px;
+                cursor: pointer;
+            }
+            span {
+                font-weight: 300;
+                align-self: center;
+                margin-bottom: 24px;
+                a {
+                    color: colors.$red;
+                    text-decoration: none;
+                }
+            }
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .login-container {
+        .login-form {
+            button {
+                &:hover {
+                    background-color: #fff;
+                    color: colors.$semi-dark-blue;
+                }
+            }
+        }
+    }
+}

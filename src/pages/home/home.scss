@@ -1,0 +1,165 @@
+.home-container {
+    color: #fff;
+    margin-bottom: 3.5em; //56px
+
+    .h-search-container {
+        padding: 0 1em; //16px
+    }
+
+    .trending-container {
+        padding: 0 0 0 1em; //16px
+
+        h1 {
+            font-size: 1.25rem; //20px
+            font-weight: 300;
+            margin: 24px 0;
+        }
+
+        .carousel {
+            cursor: grab;
+            overflow: hidden;
+
+            .inner-carousel {
+                display: inline-flex;
+                gap: 16px;
+
+                .carousel-content {
+                    min-width: 240px;
+                    height: 140px;
+                    background-size: cover;
+                    position: relative;
+                    border-radius: 8px; 
+
+                    button {
+                        position: absolute;
+                        top: 8px;
+                        right: 8px;
+                    }
+
+                    .left-col {
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-end;
+                        padding-left: 1em; //16px
+
+                        .first-row {
+                            display: flex;
+                            gap: 5px;
+                            align-items: center;
+                            font-size: 0.75rem; //12px
+                            font-weight: 300;
+
+                            span {
+                                opacity: 0.8;
+                            }
+                        }
+
+                        h4 {
+                            margin: 0;
+                            margin-bottom: 1.06em; //16px
+                            font-size: 0.9375rem; //15px
+                            font-weight: 500;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .recommended-container {
+        padding: 0 1em; //16px
+
+        h1 {
+            font-size: 1.25em; //20px
+            font-weight: 300;
+            
+        }
+
+    }
+}
+
+@media screen and (min-width: 768px ){
+    .home-container {
+       
+        .h-search-container {
+            padding: 0 1.56em; //25px
+        }
+
+        .trending-container {
+            padding: 0 0 0 1.56em; //25px
+
+            h1 {
+                font-size: 2rem; //32px
+                letter-spacing: 0.5px;
+            }
+
+            .carousel {
+
+                .inner-carousel {
+                    gap: 40px; 
+
+                    .carousel-content {
+                        min-width: 470px;
+                        height: 230px;
+
+                        button {
+                            top: 1em; //16px
+                            right: 1.5em; //24px
+                        }
+
+                        .left-col {
+                            padding-left: 1.5em; //24px
+                            
+                            .first-row {
+                                gap: 9px;
+                                font-size: 0.937em; //15px
+                            }
+
+                            h4 {
+                                font-size: 1.5rem; //24px
+                                margin-bottom: 1; //24px
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .recommended-container {
+            padding: 0 1.875em; //30px
+
+            h1 {
+                font-size: 2rem; //32px
+                letter-spacing: 0.5px;
+            }
+
+        }
+    }
+
+}
+
+@media screen and (min-width: 1440px ){
+    .home-container {
+       width: 100%;
+        .h-search-container {
+            padding-left: 2.25em; //36px
+        }
+        .trending-container {
+            padding: 0;
+            padding-left: 2.25em; //36px
+
+        }
+
+        .recommended-container {
+            padding: 0 36px; //30px
+
+            h1 {
+                font-size: 2rem; //32px
+                letter-spacing: 0.5px;
+            }
+
+        }
+    }
+    
+}

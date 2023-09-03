@@ -1,0 +1,29 @@
+.tv-series-container {
+    color: #fff;
+     padding: 0 1em; //25px
+    margin-bottom: 3.5em; //56px
+
+    h1 {
+        font-size: 1.25rem; //20px
+        font-weight: 300;
+        margin: 1.2em 0; //24px
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .tv-series-container {
+        padding: 0 1.56em; //25px
+
+        h1 {
+            font-size: 2rem; //32px
+        }
+    }
+    
+}
+
+@media screen and (min-width: 1440px) {
+    .tv-series-container {
+        padding-left: 36px; //36px
+    }
+    
+}

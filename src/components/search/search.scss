@@ -1,0 +1,41 @@
+.search-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    margin-top: 26px;
+    img {
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+    }
+
+    input {
+        background-color: transparent;
+        border: none;
+        font-family: inherit;
+        font-size: 16px;
+        font-weight: 300;
+        width: 100%;
+        margin-left: 16px;
+        outline: none;
+        color: inherit;
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+    .search-container {
+        img {
+            width: 32px;
+            height: 32px;
+        }
+    
+        input {
+           font-size: 24px;
+        }
+    
+    }
+    
+    
+}
